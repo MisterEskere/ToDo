@@ -1,5 +1,6 @@
-from flask import Flask, request, jsonify, make_response
-from connect import connect_to_database, close_database_connection, execute_query
+from connect import (close_database_connection, connect_to_database,
+                     execute_query)
+from flask import Flask, jsonify, make_response, request
 
 app = Flask(__name__)
 connection = None
